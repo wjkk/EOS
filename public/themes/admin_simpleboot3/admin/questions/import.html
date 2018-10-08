@@ -1,0 +1,76 @@
+<include file="public@header"/>
+</head>
+<body>
+<div class="wrap">
+    <ul class="nav nav-tabs">
+        <li class="active"><a>题库导入</a></li>
+    </ul>
+    
+ 
+
+<!-- <form action="{:url('ReportUser/excel')}" method="post" class="form-horizontal js-ajax-form margin-top-20">
+        <div class="row">
+            <div class="col-md-2 col-md-offset-4">
+                <input id="file-1" type="hidden" name="file_url" >
+                <input  id="file-1-name" type="text" name="file_name" title="" class="form-control">
+
+            </div>
+            <div class="col-md-2">
+                <a href="javascript:uploadOne('图片上传','#file-1','file');" class="btn btn-success">上传excel</a>
+            </div>
+        </div>
+        <div class="form-group margin-top-20">
+            <div class="col-md-offset-4 col-md-2">
+                <button type="submit" class="btn btn-primary js-ajax-submit">确定</button>
+                <a class="btn btn-default" href="{:url('ReportUser/index')}">{:lang('BACK')}</a>
+            </div>
+        </div>
+    </form>
+ -->
+
+
+
+<!-- <form action="{:url('ReportUser/excel')}" method="post" class="form-horizontal js-ajax-form margin-top-20">
+        <div class="row">
+            <div class="col-md-2 col-md-offset-4">
+                <input id="file-1" type="hidden" name="file_url" >
+                <input  id="file-1-name" type="text" name="file_name" title="" class="form-control">
+
+            </div>
+            <div class="col-md-2">
+                <a href="javascript:uploadOne('图片上传','#file-1','file');" class="btn btn-success">上传excel</a>
+            </div>
+        </div>
+        <div class="form-group margin-top-20">
+            <div class="col-md-offset-4 col-md-2">
+                <button type="submit" class="btn btn-primary js-ajax-submit">确定</button>
+                <a class="btn btn-default" href="{:url('index')}">{:lang('BACK')}</a>
+            </div>
+        </div>
+    </form> -->
+
+<!--     <form action="{:url('input')}" method="post" accept-charset="utf-8" enctype="multipart/form-data">
+    <input type="file" name="file_name" /> <br> 
+
+        <input type="submit" value="上传" /> 
+                <div class="form-group margin-top-20">
+            <div class="col-md-offset-4 col-md-2">
+                <button type="submit" class="btn btn-primary">确定</button>
+                <a class="btn btn-default" href="{:url('index')}">{:lang('BACK')}</a>
+            </div>
+        </div>
+    </form> -->
+
+
+<form method="post" action="{:url('savestudentImport')}" class="form-signin" enctype="multipart/form-data" >
+    <input name="excel" type="file" class="form-control">
+    <button class="btn btn-lg btn-primary">导入</button>
+    <a href="__STATIC__/example_questions.xlsx" download="example_questions.xlsx">点击下载模板</a>
+</form>
+
+
+
+</div>
+<script src="__STATIC__/js/admin.js"></script>
+</body>
+</html>

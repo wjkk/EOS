@@ -1,0 +1,127 @@
+
+.container{
+	width: 10rem;
+	height: 100%;
+	margin: 0 auto;
+	position: relative;
+	font-size: .38rem;
+	
+	
+}
+
+.bg{
+	height: 100%;
+	background: url("/yitaibi_ml3k9o/public/static/images/images/login.png") no-repeat 0 0;
+	background-size: 100% 100%;
+	overflow: scroll;
+}
+.login{
+	width: 7.413rem;
+	padding-top: 1.467rem;
+	margin: 0 auto;
+}
+
+.top{
+	margin-bottom: 2rem;
+}
+.top>h4{
+	color: #fff;
+	font-size: 0.48rem;
+	font-weight: bold;
+	letter-spacing: 0.053rem;
+	margin-bottom: 0.267rem;
+}
+.login .ip,.login .ipl, .login .vft{
+	height: 0.96rem;
+	/*line-height: 36px;*/
+	background: #F5F5F5;
+	margin-bottom: 0.347rem;
+	font-size: 0.427rem;
+	color: #333;
+	padding: 0 0.267rem;
+	border-radius: 0.08rem;
+}
+.login .ip>label,.login .ipl>label{
+	width: 20%;
+	height: 0.533rem;
+	margin-top: 0.213rem;
+	display: block;
+	float: left;
+	border-right: 1px solid #999999;
+}
+.login .ip>input,.login .ipl> input, .login .vft> input{
+	height: 100%;
+	width: 70%;
+	padding-left: 0.267rem;
+	border:none;
+	float: right;
+	box-sizing: border-box;
+	background: transparent;
+}
+.login .ipl>label{
+	width: 30% !important;
+}
+.login .ipl> input{
+	width: 60%;
+}
+.login .vft> input{
+	width: 60%;
+	padding-left: 0;
+	float: left !important;
+}
+.login .vft>button{
+	color: #fff;
+	font-size: 0.4rem;
+	background-color: #545A91;
+	border-radius: 0.133rem;
+	padding: 0.053rem 0.107rem;
+	margin-top: 0.1rem;
+	float: right !important;
+	width: 2.613rem;
+    height: 0.747rem;
+}
+.login>p{
+	color: #fff;
+	font-size: 0.32rem;
+	margin-top: 0.933rem;
+}
+.login .sign{
+	width: 7.12rem;
+	height: 1.333rem;
+	margin:2.533rem auto 0;
+}
+.login .sign>button{
+	width: 100%;
+	height: 100%;
+	color: #fff;
+	font-size: 0.56rem;
+	border-radius: 0.133rem;
+	text-align: center;
+	background: #545A91;
+}
+
+/*弹框*/
+.tan{
+	color: #fff;
+	width: 5.333rem;
+	height: 2rem;
+	text-align: center;
+	position: fixed;;
+	top: 50%;
+	left: 50%;
+	display: none;
+	margin-left: -2.67rem;
+	margin-top: -0.8rem;
+	background: rgba(0,0,0,.7);
+	border-radius: 5px;
+}
+/*.tan>h5{
+	font-size: 0.427rem;
+	margin: 0.213rem 0 0.15rem;
+	letter-spacing: 0.053rem;
+}*/
+.tan>p{
+	font-size: 0.373rem;
+	letter-spacing: 1px;
+    line-height: 2rem;
+}

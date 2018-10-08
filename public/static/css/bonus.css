@@ -1,0 +1,110 @@
+.container{
+	width: 10rem;
+	height: 100%;
+	margin: 0 auto;
+	position: relative;
+	font-size: .38rem;
+	overflow: hidden;
+}
+
+.content{
+	margin: 0 0.4rem;
+	padding-top: 0.667rem;
+}
+.content .switch{
+	text-align: center;
+	border-radius: 0.133rem;
+}
+.content .switch>button{
+	width: 3.067rem;
+	height: 1.307rem;
+	color: #333;
+	font-size: 0.48rem;
+	background: #F5F5F5;
+	
+}
+.content .switch>button:first-child{
+	border-radius: 0.133rem 0 0 0.133rem;
+}
+.content .switch>button:last-child{
+	margin-left: -0.107rem;
+	border-radius: 0 0.133rem 0.133rem 0;
+}
+.on{
+	color: #fff !important;
+	background-color: #545A91 !important;
+}
+
+
+.list{
+	margin-top: 0.8rem;
+	height: 12.3rem;
+	overflow: scroll;
+}
+.list .record{
+	color: #666;
+	font-size: 0.373rem;
+	text-align: center;
+	margin-top: 2rem;
+	display: none;
+}
+.list .is_show{display: none;}
+.list .show{display: block;}
+.list .lie{
+	border-radius: 0.133rem;
+	background: #F5F5F5;
+	margin-bottom: 0.133rem;
+	padding: 0.587rem 0px 0.64rem 0.4rem;
+}
+.list .lie>.lg{
+	width: 0.4rem;
+	height: 0.4rem;
+	box-sizing: border-box;
+	border: 0.107rem solid #545A91;
+	border-radius: 0.08rem;
+	display: inline-block;
+	margin-right: 0.133rem;
+	background: #fff;
+}
+.list .lie>.title{
+	color: #666;
+	font-size: 0.48rem;
+	display: inline-block;
+}
+.list .lie>p{
+	color: #999;
+	font-size: 0.4rem;
+	margin-top: 0.133rem;
+}
+
+.list table{
+	color: #333;
+	display: table;
+	width: 100%;
+	font-size: 0.4rem;
+	text-align: center;
+	background-color: #F5F5F5;
+    border-radius: 0.133rem 0.133rem 0 0;
+}
+.list tr{
+	border-bottom: 1px dashed #999;
+}
+.list tr th{
+	padding: 0.4rem 0;
+}
+tbody tr:last-child{
+	border-bottom: none;
+}
+.list td, .record .list th{
+	padding: 0.4rem 0;
+}
+.list td>span{
+	color: #fff;
+	width: 0.533rem;
+	height: 0.533rem;
+	line-height: 0.533rem;
+	border-radius: 50%;
+	display: block;
+	margin: 0 auto;
+	background: #545A91;
+}

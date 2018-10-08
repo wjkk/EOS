@@ -1,0 +1,341 @@
+
+.content{
+	height: 176.714rem;
+	background: url('../images/content_bg.png') no-repeat 0 0;
+	background-size: 100% 100%;
+}
+.name{
+	color: #333;
+	font-size: 1.286rem;
+	text-align: center;
+	padding: 1.071rem 0;
+}
+.info{
+	color: #fff;
+	font-size: 1rem;
+    padding-top: 1.214rem;
+    padding-left: 3.286rem;
+	
+}
+.info> .time{
+	margin: 0px 0 3.286rem;
+}
+
+.music{
+	padding: 0 1.0714rem;
+	margin-top: 4rem;
+	height: 5.714rem;
+}
+.aplayer{
+	border-radius: 0 !important;
+	background: linear-gradient(to right, #FF00F0 , #0066FF);
+}
+.aplayer .aplayer-pic img{
+	border-radius: 0 !important;
+}
+.aplayer .aplayer-info{
+	margin-left: 5rem !important;
+}
+.aplayer .aplayer-info .aplayer-music .aplayer-title{
+	padding-left: 2.143rem;
+}
+.aplayer .aplayer-info .aplayer-music .aplayer-title{
+	color: #fff;
+	background:url("../images/music.png") no-repeat 5px 2px;
+	background-size: 1.0714rem 1.0714rem;
+	margin-top: 1.429rem;
+}
+.aplayer .aplayer-info .aplayer-controller .aplayer-time,.aplayer .aplayer-info .aplayer-controller .aplayer-time i{
+	color: #fff !important;
+}
+
+
+/*购票*/
+.ticket{
+	width: 100%;
+	margin-top: 5.714rem;
+	position: relative;
+}
+.purchase{
+	margin: 0 1.0714rem;
+	color: #fff;
+}
+.purchase .exchang{
+	padding-left: 1.429rem;
+	font-size: 1rem;
+	background: url("../images/spot.png") no-repeat 5px center;
+	background-size: 6px 6px;
+}
+.purchase .price{
+	display: flex;
+	margin: 0.714rem 1.429rem 1.5rem;
+	justify-content: space-between;
+}
+.purchase .price_t{
+	width: 6.429rem;
+	height: 2.143rem;
+	text-align: center;
+	line-height: 2.143rem;
+	font-size: 1.143rem;
+	box-sizing: border-box;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	border-left: 0.5px solid #fff;
+	border-right: 0.5px solid #fff;
+}
+.on{
+	border:0 !important;
+	background:linear-gradient(to right, #FF00F0 , #0066FF);
+}
+.purchase .js{
+	width: 7.786rem;
+	height: 2rem;
+	box-sizing: border-box;
+	border:0.5px solid #fff;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0.857rem 0 2.857rem 1.429rem;
+}
+.purchase .js .fh{
+	width: 2rem;
+	height: 100%;
+	font-size: 1.429rem;
+	text-align: center;
+}
+.purchase .js .num{
+	width: 4rem;
+	height: 100%;
+	line-height: 2rem;
+	text-align: center;
+	box-sizing: border-box;
+	border-left: 0.5px solid #fff;
+	border-right: 0.5px solid #fff;
+}
+.purchase .infor{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-right: 9%;
+	margin-bottom: 0.714rem;
+}
+.purchase .infor>span{
+	width: 4.286rem;
+	white-space: nowrap;
+	display: inline-block;
+}
+.purchase .infor>input{
+	color: #fff;
+	width: 15.214rem;
+	font-size: 1rem;
+	background-color: rgba(0,0,0,0);
+	border:0; 
+	border-bottom: 1px solid #FFF5F5F5;
+	padding: 0.714rem 0;
+	padding-left: 5px;
+}
+.purchase .btn{
+	width: 100%;
+	margin-top: 2.5rem;
+}
+.purchase .btn>button{
+	display: block;
+	width: 13.214rem;
+	height: 2.857rem;
+	color: #fff;
+	font-size: 1.143rem;
+	margin: 0 auto;
+	border-radius: 2.857rem;
+	background: linear-gradient(to right, #FF00F0 , #0066FF);
+}
+.purchase .pm{
+	margin-top: 2.5rem;
+	padding-left: 0.714rem;
+	font-size: 1.143rem;
+}
+
+.titt{
+	width: 200px;
+	height: 70px;
+	background-color: rgba(124,53,248,.6);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -35px;
+	margin-left: -100px;
+	border-radius: 7px;
+}
+.titt>p{
+	text-align: center;
+	color: #fff;
+	padding: 5px 0;
+}
+.titt>.title{
+	font-size: 16px;
+}
+.titt>.ct{
+	font-size: 14px;
+}
+
+
+/*爱豆助攻榜*/
+.assists{
+	color: #fff;
+	margin-top: 7.14rem;
+}
+
+.assists .title{
+	font-size: 1.286rem;
+	text-align: center;
+}
+.assists .ranking{
+	margin: 3.214rem 2.857rem 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+.assists .ranking>div{
+	position: relative;
+}
+.assists .ranking .tk{
+	position: absolute;
+	top: -1.786rem;
+}
+.assists .no2 .no2_inf>img{
+	width: 4.5rem;
+	height: 4.5rem;
+}
+.assists .no1 .no1_inf>img{
+	width: 5.357rem;
+	height: 5.357rem;
+}
+.assists .no3 .no3_inf>img{
+	width: 4.286rem;
+	height: 4.286rem;
+}
+.assists .ranking .name{
+	color: #fff;
+	font-size: 0.857rem;
+	text-align: center;
+	padding: 0.857rem;
+}
+.assists .ranking .num{
+	color: #8A00FF;
+	font-size: 1.143rem;
+	text-align: center;
+}
+.assists .btn{
+	width: 100%;
+	margin-top: 1.5rem;
+}
+.assists .btn>a{
+	display: block;
+	width: 13.214rem;
+	height: 2.857rem;
+	margin: 0 auto;
+	border-radius: 2.857rem;
+	background: linear-gradient(to right, #FF00F0 , #0066FF);
+}
+.assists .btn a>button{
+	color: #fff;
+	width: 100%;
+	height: 100%;
+	font-size: 1.143rem;
+	background: transparent;
+}
+
+/*购票须知*/
+.notice{
+	color: #fff;
+	margin-top: 7.14rem;
+}
+.notice .title{
+	font-size: 1.286rem;
+	text-align: center;
+}
+.notice_ct{
+	margin: 1.429rem 1.0714rem 0;
+}
+.notice_ct p{
+	line-height: 1.429rem;
+	letter-spacing: 1px;
+}
+.notice_ct .tit{
+	font-size: 1rem;
+	padding-bottom: 4px;
+}
+.notice_ct .cot{
+	font-size: 0.857rem;
+	margin-bottom: 2.143rem;
+}
+
+
+/*我的邀请码*/
+.yqm{
+	margin-top: 28%;
+}
+.code{
+	color: #FFF;
+	margin: 0 1.0714rem;
+}
+.code .title{
+	font-size: 1.143rem;
+}
+.code .fz{
+	padding: 0 1.0714rem;
+	margin-top: 2.143rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.code .fz>input{
+	color: #fff;
+	font-size: 1rem;
+	border:0;
+	background: transparent;
+}
+.code .fz>button{
+	width: 5.714rem;
+	height: 2rem;
+	box-sizing: border-box;
+	border:1px solid #fff;
+	font-size: 0.857rem;
+	color: #fff;
+	background:transparent;
+}
+.code .cooperation{
+	margin-top: 11.43rem;
+	text-align: center;
+}
+.code .smts{
+	font-size: 1rem;
+	margin-bottom: 1rem;
+}
+.code .zbf{
+	font-size: 8px;
+	line-height: 1.375rem;
+}
+.code .fb{
+	margin-top: 0.857rem;
+	font-size: 9px;
+	/*white-space: nowrap;*/
+}
+.code .fb>span{
+	padding: 0 5px;
+	border-left: 1px solid #fff;
+}
+.code .fb span:first-child{
+	border-left:0;
+	padding-left: 0;
+}
+.code .fb span:last-child{
+	padding-right: 0;
+}
+
+@media (min-width: 320px) and (max-width: 350px){
+	.yqm{margin-top: 12.5%}
+	.code .smts{margin-bottom: 10px;}
+}
+@media (min-width: 411px){
+	.yqm{margin-top: 39%}
+}

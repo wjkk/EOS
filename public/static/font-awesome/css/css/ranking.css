@@ -1,0 +1,150 @@
+
+.content_bg{
+	height: 71.071rem;
+	background: url('../images/ranking_bg.png') no-repeat 0 0;
+	background-size: 100% 100%;
+}
+.content{
+	margin: 0 1.0714rem;
+}
+.content .rule{
+	color: #fff;
+	margin: 0px 1.0714rem 0;
+	padding-top: 3.071rem;
+}
+.content .rule>p{
+	font-size: 0.857rem;
+	line-height: 1.786rem;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+}
+
+/*爱豆助攻榜*/
+.assists{
+	color: #fff;
+	margin-top: 7.14rem;
+}
+.assists .ranking{
+	margin: 3.214rem 2.857rem 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+.assists .ranking>div{
+	position: relative;
+}
+.assists .ranking .tk{
+	position: absolute;
+	top: -1.786rem;
+}
+.assists .no2 .no2_inf>img{
+	width: 4.5rem;
+	height: 4.5rem;
+}
+.assists .no1 .no1_inf>img{
+	width: 75px;
+	height: 75px;
+}
+.assists .no3 .no3_inf>img{
+	width: 5.357rem;
+	height: 5.357rem;
+}
+.assists .ranking .name{
+	color: #fff;
+	font-size: 0.857rem;
+	text-align: center;
+	padding: 0.857rem;
+}
+.assists .ranking button{
+	width: 100%;
+	height: 2.5rem;
+	border-radius: 2.5rem;
+	margin-top: 1.0714rem;
+	color: #fff;
+	font-size: 1.143rem;
+	background:linear-gradient(to right, #FF00F0 , #0066FF);
+}
+.assists .ranking .num{
+	color: #8A00FF;
+	font-size: 1.143rem;
+	text-align: center;
+	white-space: nowrap;
+}
+
+/*列表*/
+.list{
+	height:30.357rem;
+	margin: 8.214rem 1.0714rem 0;
+	overflow:scroll;
+}
+.lie{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 1.786rem;
+}
+.lie:last-child{
+	margin-bottom: 0;
+}
+.lie>span{
+	font-size: 1.143rem;
+}
+.list .mx{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 60%;
+}
+.list .mx .tet{
+	width: calc(100% - 4.643rem);
+}
+.list .mx .tet>.name{
+	font-size: 1.143rem;
+	padding-bottom: 0.714rem;
+}
+.list .mx .tet>.ps{
+	font-size: 1rem;
+	color: #8A00FF;
+}
+.list .mx>.tx{
+	width: 3.571rem;
+	height: 3.571rem;
+	font-size: 0;
+}
+.list .tx>img{
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+}
+.lie .tp>button{
+	width: 5rem;
+	height: 2.5rem;
+	border-radius: 2.5rem;
+	color: #fff;
+	margin-right: 5px;
+	background: linear-gradient(to right, #FF00F0 , #0066FF);
+}
+
+.fh{
+	width: 100%;
+	position: fixed;
+	bottom: 1rem;
+	left: 0;
+}
+.fh>a{
+	width: 80%;
+	height: 2.5rem;
+	margin: 0 auto;
+	display: block;
+	border-radius: 2.5rem;
+	background: linear-gradient(to right, #FF00F0 , #0066FF);
+}
+.fh a>button{
+	width: 100%;
+	height: 100%;
+	color: #fff;
+	font-size: 1.143rem;
+	border-radius: 2.5rem;
+	background: transparent;
+}

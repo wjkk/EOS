@@ -1,0 +1,151 @@
+.container{
+	width: 10rem;
+	height: 100%;
+	padding-top: 1.173rem;
+	margin: 0 auto;
+	position: relative;
+	font-size: .38rem;
+	overflow: hidden;
+	background-color: #545A91;
+}
+.container .head{
+	overflow: hidden;
+	text-align: center;
+	/*height: 3.2rem;*/
+	margin: 1.07rem 0 0.533rem;
+}
+.container .head>img{
+	width: 2.08rem;
+	height: 2.08rem;
+}
+.container .head>p{
+	color: #CECECE;
+	font-size: 0.4rem;
+	padding-top: 0.4rem;
+}
+
+.vty{
+	margin: 0 0.4rem;
+	height: 6.267rem;
+	border-radius: 0.133rem 0.133rem 0 0;
+	background: #fff;
+	margin-top: 2.4rem;
+	margin-bottom: 0.293rem;
+	padding-top: 3.47rem;
+	position: relative;
+}
+.vty>.img{
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	top: -2rem;
+	left: 0;
+}
+.vty .img>.jb{
+	width: 4.347rem;
+	height: 4rem;
+	display: block;
+	margin: 0 auto;
+}
+.vty .img>.text{
+	width: 4.747rem;
+	height: 1.013rem;
+	display: block;
+	margin: 0 auto;
+}
+.vty>.jl{
+	width: 2.773rem;
+	height: 0.88rem;
+	border-radius: 0.08rem;
+	margin: 0 auto;
+	color: #fff;
+	text-align: center;
+	line-height: 0.88rem;
+	font-size: 0.4rem;
+	background: #3D4483
+}
+.vty>.pm{
+	color: #666;
+	font-size: 0.4rem;
+	padding: 0.48rem 0;
+	text-align: center;
+}
+.vty .pm .number{
+	color: #333;
+	font-size: 0.8rem;
+	padding-top: 0.20rem;
+}
+.vty>.btn{
+	width: 7.12rem;
+	height: 1.333rem;
+	margin: 0 auto;
+	border-radius: 0.133rem;
+}
+.vty .btn button{
+	width: 100%;
+	height: 100%;
+	border-radius: 0.133rem;
+	font-size: 0.56rem;
+}
+.vty .btn>a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.fail{
+	padding-bottom: 0.907rem;
+}
+
+.fail .img>.fail{
+	width: 6rem;
+	height: auto;
+	display: block;
+	margin: 0 auto 0.267rem;
+}
+.fail .img>.ph{
+	width: 1.84rem;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+}
+.fail .img>p{
+	color: #fff;
+	font-size: 0.32rem;
+	text-align: center;
+	margin-top: 0.213rem;
+}
+.fail>p{
+	color: #fff;
+	font-size: 0.347rem;
+	text-align: center;
+	margin-top: 0.8rem;
+}
+
+.fail>.btn{
+	width: 7.12rem;
+	height: 1.333rem;
+	margin: 0 auto;
+	border-radius: 0.133rem;
+}
+.fail .btn a>button{
+	width: 100%;
+	height: 100%;
+	color: #413D3C;
+	border-radius: 0.133rem;
+	font-size: 0.56rem;
+	background-color: #fff;
+}
+.fail .btn>a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.mroe{
+	margin-top: 0.267rem;
+	margin-bottom: 0.4rem;
+}
+.mroe a>button{
+	color: #fff;
+	background-color: #3D4483;
+}

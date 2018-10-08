@@ -1,0 +1,132 @@
+.container{
+	width: 10rem;
+	height: 100%;
+	margin: 0 auto;
+	position: relative;
+	font-size: .38rem;
+	overflow: hidden;
+}
+
+/*.head{
+	height: 1.173rem;
+	position: relative;
+}
+.box{
+	width: 1.173rem;
+	height: 100%;
+	text-align: center;
+	vertical-align: middle;;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.box>a{
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+.box a>img{
+	width: 0.24rem;
+	height: 0.427rem;
+	margin-top: 0.373rem;
+}
+.head>h3{
+	color: #333;
+	height: 1.173rem;
+	line-height: 1.173rem;
+	font-size: 0.427rem;
+	text-align: center;
+}*/
+.content{
+	margin: 0 0.4rem;
+}
+
+.top{
+	text-align: center;
+	margin-top: 0.933rem;
+}
+.top .title{
+	color: #333;
+	font-size: 0.48rem;
+	margin-bottom: 0.4rem;
+}
+.top .number{
+	width: 1.787rem;
+	height: 0.56rem;
+	color: #fff;
+	font-size: 0.4rem;
+	line-height: 0.56rem;
+	border-radius: 0.08rem;
+	margin: 0 auto;
+	background: #545A91;
+	margin-bottom: 1.147rem;
+}
+.top .ipt{
+	width: 7.733rem;
+	height: 1.07rem;
+	color: #fff;
+	font-size: 0.4rem;
+	line-height: 1.07rem;
+	text-align: left;
+	background: #545A91;
+	margin: 0 auto;
+	padding-left: 0.4rem;
+	border-radius:0.133rem;
+}
+.top .ipt>input{
+	color: #fff;
+	background: #545A91;
+	border:none;
+}
+input::-webkit-input-placeholder{
+	color: #fff;
+}
+.top .ipt>button{
+	color: #fff;
+	font-size: 0.4rem;
+	background: #545A91
+}
+.top .btn{
+	width: 8.133rem;
+	height: 1.07rem;
+	margin: 0 auto;
+	margin-top: 0.4rem;
+}
+.top .btn>button{
+	color: #fff;
+	width: 100%;
+	height: 100%;
+	font-size: 0.4rem;
+	background: #545A91;
+	border-radius:0.133rem;
+}
+
+.record{
+	/*height: 8.8rem;*/
+	margin-top: 0.933rem;
+	padding-top: 0.667rem;
+	background-color: #F5F5F5;
+}
+.record>.tit{
+	color: #333;
+	font-size: 0.4rem;
+	text-align: center;
+}
+.record .list{
+	margin: 0 0.533rem;
+}
+.record .list>table{
+	color: #333;
+	width: 100%;
+	font-size: 0.4rem;
+	text-align: center;
+}
+.record .list tr{
+	border-bottom: 1px dashed #999;
+}
+.record tbody tr:last-child{
+	border-bottom: none;
+}
+.record .list td, .record .list th{
+	padding: 0.4rem 0;
+}

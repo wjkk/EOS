@@ -1,0 +1,272 @@
+.container{
+	width: 10rem;
+	height: 100%;
+	margin: 0 auto;
+	position: relative;
+	font-size: .38rem;
+	overflow: hidden;
+}
+.center {
+	display: none;
+}
+/*倒计时*/
+.cont .head{
+	overflow: hidden;
+	text-align: center;
+	height: 2.93rem;
+	margin: 1.07rem 0 1.07rem;
+}
+.cont .head>img{
+	width: 1.6rem;
+	height: 1.6rem;
+}
+.cont .head>p{
+	color: #545A91;
+	font-size: 0.32rem;
+	padding-top: 0.4rem;
+}
+
+.cont .tit{
+	text-align: center;
+}
+.cont .tit>img{
+	width: 4.747rem;
+	height: auto;
+}
+
+.cont .number{
+	height: 8.4rem;
+	text-align: center;
+	margin-top: 1.73rem;
+}
+.cont .number>p{
+	color: #545A91;
+	font-family:"宋体";
+	font-size: 2.213rem;
+}
+
+
+.cont .container>p{
+	color: #999;
+	font-size: 0.32rem;
+	text-align: center;
+	margin-top: 4.533rem;
+}
+
+/*答题区*/
+.content{
+	padding-top: 0.8rem;
+	position: relative;
+	display: none;
+}
+.content>p{
+	color: #999;
+	font-size: 0.32rem;
+	text-align: center;
+	margin-top: 1.33rem;
+}
+.content .info{
+	width: 4.667rem;
+	height: 1.2rem;
+	margin: 0 auto;
+	border-radius: 0.133rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #F5F5F5;
+}
+.content .info>img{
+	width: 0.853rem;
+	height: 0.853rem;
+	border-radius: 50%;
+	margin-right: 0.267rem;
+}
+.content .info>p{
+	color: #666;
+	font-size: 0.347rem;
+}
+
+.content .number{
+	width: 1.787rem;
+	height: 0.587rem;
+	background: #545A91;
+	color: #fff;
+	font-size: 0.4rem;
+	margin: 0.8rem auto 0;
+	text-align: center;
+	border-radius: 0.08rem;
+	line-height: 0.587rem;
+}
+
+.content .subject{
+	margin: 1.73rem 1.07rem 1rem;
+}
+.content .subject .lg{
+	width: 0.4rem;
+	height: 0.4rem;
+	box-sizing: border-box;
+	border: 0.107rem solid #545A91;
+	border-radius: 0.08rem;
+	display: inline-block;
+	margin-right: 0.133rem;
+	background: #fff;
+}
+.content .subject .title .problem{
+    color: #333;
+    font-size: 0.4rem;
+    display: inline-block;
+}
+.content .subject .title .choice{
+	width: 100%;
+	height: 1.6rem;
+	background-color: #545A91;
+	margin-bottom: 0.213rem;
+	border-radius: 0.133rem;
+	position: relative;
+}
+.content .title .choice:nth-child(2){
+	margin-top: 1.2rem;
+}
+.content .title .choice>.fool{
+	width: 0.64rem;
+	height: 0.64rem;
+	font-size: 0;
+	display: none;
+	position: absolute;
+	top: 0.16rem;
+	left: 0.16rem;
+}
+.content .title .choice>.fool>img{
+	width: 100%;
+	height: 100%;
+}
+.content .title .choice>p{
+	color:#fff;
+	font-size: 0.427rem;
+	text-align: center;
+	line-height: 1.6rem;
+}
+.container >p{
+	color:#999999;
+	font-size: 0.32rem;
+	text-align: center;
+	line-height: 1.6rem;
+}
+
+/*弹框*/
+.tan{
+	width: 5.33rem;
+	height: 3.73rem;
+	border-radius: 0.133rem;
+	position: absolute;
+	top: 8.8rem;
+	left: 50%;
+	margin-left: -2.67rem;
+	background: #fff;
+	text-align: center;
+	display: none;
+}
+.tan2 {
+	height: 2.73rem;
+}
+.tan>h4{
+	color: #545A91;
+	font-size:0.32rem;
+	padding-top: 0.8rem;
+	padding-bottom: 0.107rem;
+}
+.tan>img{
+	width: 0.533rem;
+	height: 0.533rem;
+}
+.tan>p{
+	color: #000;
+	font-size: 0.267rem;
+}
+.tan>button{
+	width: 2.13rem;
+	height: 0.533rem;
+	border-radius: 0.08rem;
+	color: #fff;
+	font-size: 0.267rem;
+	margin-top: 0.4rem;
+	background: #545A91;
+}
+.tan .close{
+	width: 0.8rem;
+	height: 0.8rem;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.tan .close>div{
+	width: 0.373rem;
+	color: #fff;
+	font-size: 0.133rem;
+	text-align: center;
+	margin: 0.187rem auto 0;
+	background-color: #545A91;
+
+}
+
+.mb{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,.6);
+}
+.rule{
+	width: 7.627rem;
+	height: 5.733rem;
+	position: fixed;
+	top: 5.2rem;
+	left: 50%;
+	margin-left: -3.813rem;
+	background: #F5F5F5;
+	border-radius: 0.133rem;
+	/*display: none;*/
+}
+.rule>.title{
+	color: #333;
+	text-align: center;
+	font-size: 0.48rem;
+	margin-top: 0.667rem;
+	margin-bottom: 0.4rem;
+	position: relative;
+}
+.rule>div{
+	color: #666;
+	font-size: 0.32rem;
+	overflow: hidden;
+	margin: 0 0.32rem 0.533rem;
+}
+.rule>button{
+	width: 2.8rem;
+	height: 0.72rem;
+	display: block;
+	border-radius: 0.08rem;
+	margin: 0.667rem auto 0;
+	color: #fff;
+	font-size: 0.32rem;
+	background: #545A91;
+}
+.rule div>.num{
+	color: #fff;
+	width: 0.53rem;
+	height: 100%;
+	line-height: 0.53rem;
+	text-align: center;
+	display: inline-block;
+	background-color: #545A91;
+	border-radius: 0.08rem;
+}
+.rule .ct{
+	float: right;
+	width: calc(100% - 0.72rem);
+}
+.rule .ct>p{
+	color: #666;
+	font-size: 0.373rem;
+}

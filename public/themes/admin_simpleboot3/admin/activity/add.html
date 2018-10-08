@@ -1,0 +1,148 @@
+<include file="public@header" />
+
+</head>
+
+
+
+<body>
+
+
+
+	<div class="wrap">
+
+
+
+		<ul class="nav nav-tabs">
+
+
+
+			<li ><a href="{:url('index')}">活动列表</a></li>
+
+
+
+        	<li class="active"><a href="javascript:;" >添加</a></li>
+
+
+
+		</ul>
+
+
+
+		<form method="post" class="form-horizontal js-ajax-form margin-top-20" action="{:url('add')}" enctype="multipart/form-data">
+
+			<div class="form-group">
+
+				<label for="input-user_login" class="col-sm-2 control-label"><span class="form-required">*</span>活动名称</label>
+
+				<div class="col-md-6 col-sm-10">
+
+					<input name="a_name"></input>
+
+				</div>
+
+			</div>
+
+			<div class="form-group">
+
+				<label for="input-user_login" class="col-sm-2 control-label"><span class="form-required">*</span>开始时间</label>
+
+				<div class="col-md-6 col-sm-10">
+
+        <input type="text" class="form-control js-bootstrap-datetime" name="stime"
+               value=""
+               style="width: 140px;" autocomplete="off">
+
+				</div>
+
+			</div>
+
+            <div class="form-group">
+
+                <label for="input-user_login" class="col-sm-2 control-label"><span class="form-required">*</span>结束时间</label>
+
+                <div class="col-md-6 col-sm-10">
+
+                     <input type="text" class="form-control js-bootstrap-datetime" name="etime" value="" style="width: 140px;" autocomplete="off">
+
+                </div>
+
+            </div>
+
+     <!--        <div class="form-group">
+     
+         <label for="input-user_login" class="col-sm-2 control-label"><span class="form-required">*</span>复活次数</label>
+     
+         <div class="col-md-6 col-sm-10">
+     
+             <input name="reveive_num" onkeyup="value=value.replace(/[^\d]/g,'')" ></input>
+     
+         </div>
+     
+     </div> -->
+
+
+            <div class="form-group">
+
+                <label for="input-user_login" class="col-sm-2 control-label"><span class="form-required">*</span>奖池奖金</label>
+
+                <div class="col-md-6 col-sm-10">
+
+                    <input name="eth" onkeyup="value=value.replace(/[^\d]/g,'')" ></input>
+
+                </div>
+
+            </div>
+
+            <div class="form-group">
+
+                <label for="input-user_login" class="col-sm-2 control-label"><span class="form-required">*</span>结算提示语</label>
+
+                <div class="col-md-6 col-sm-10">
+
+                    <input name="msg" style="width:200px"></input>
+
+                </div>
+
+            </div>
+
+            <div class="form-group">
+
+                <label for="input-user_login" class="col-sm-2 control-label"><span class="form-required">*</span>结算时间</label>
+
+                <div class="col-md-6 col-sm-10">
+
+                    <input type="text" class="form-control js-bootstrap-datetime" name="time" value="" style="width: 140px;" autocomplete="off">
+
+                </div>
+
+            </div>
+
+
+
+			<div class="form-group">
+
+				<div class="col-sm-offset-2 col-sm-10">
+
+					<button type="submit" class="btn btn-primary js-ajax-submit">{:lang('ADD')}</button>
+
+				</div>
+
+			</div>			
+
+		</form>
+
+
+
+	</div>
+
+
+
+	<script src="__STATIC__/js/admin.js"></script>
+
+
+
+</body>
+
+
+
+</html>

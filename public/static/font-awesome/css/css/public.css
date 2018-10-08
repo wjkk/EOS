@@ -1,0 +1,28 @@
+@charset "utf-8";
+html {
+	font-family: PingFangSC-Light, 'helvetica neue', 'hiragino sans gb', arial, 'microsoft yahei ui', 'microsoft yahei', simsun, sans-serif;
+	font-size: 14px
+}
+a{
+	text-decoration: none;
+}
+ul,div,body,p,h1,h2,h3,h4,h5,h6{
+	padding: 0;
+	margin: 0;
+}
+h1,h2,h3,h4,h5,h6{
+	font-weight: 500;
+}
+li{
+	list-style-type: none;
+}
+button{
+	padding: 0;
+	margin: 0;
+	background-color:#fff;
+	border:none;
+    outline: none;
+}
+input{
+	outline: none;
+}

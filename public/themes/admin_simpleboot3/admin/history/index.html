@@ -1,0 +1,309 @@
+<include file="public@header"/>
+
+
+
+</head>
+
+
+
+<body>
+
+
+
+<div class="wrap js-check-wrap">
+
+
+
+    <ul class="nav nav-tabs">
+
+
+
+        <li class="active"><a href="javascript:;">列表</a></li>
+
+
+
+        <li ><a href="{:url('add')}">添加</a></li>
+
+
+
+    </ul>
+
+
+
+    <form class="well form-inline margin-top-20" method="post" action="{:url('index')}">
+
+
+
+        关键字:
+
+
+
+        <input type="text" class="form-control" name="keyword" style="width: 200px;"
+
+
+
+               value="{$keyword|default=''}" placeholder="请输入关键字...">
+
+
+
+        <input type="submit" class="btn btn-primary" value="搜索"/>
+
+
+
+        <a class="btn btn-danger" href="{:url('index')}">清空</a>
+
+
+
+    </form>
+
+
+
+    <form class="js-ajax-form" action="" method="post">
+
+
+
+        
+
+
+
+        <table class="table table-hover table-bordered table-list">
+
+
+
+            <thead>
+
+
+
+            <tr>
+
+
+
+                <th>ID</th>
+
+
+
+                <th>铃声名称</th>
+
+<th>铃声</th>
+
+                <th>添加时间</th>
+
+
+
+                <th>操作</th>
+
+
+
+            </tr>
+
+
+
+            </thead>
+
+
+
+
+
+
+
+        <!--start foreach-->
+
+
+
+            <foreach name="order" item="vo">
+
+
+
+                <tr class="foreachTr" >
+
+                    <td>{$vo['id']}</td>
+
+                    <td>{$vo['name']}</td>
+
+        		<td><audio id="audio"  controls  src="{$vo.src}"></audio> </td>
+
+                    <td   >{$vo['add_time']|date="Y-m-d H:i",###}</td>
+
+
+
+                    <td  >
+
+
+
+                        <a idd={$vo['id']} class="edit" href="{:url('edit',array('id'=>$vo['id']))}" >{:lang('EDIT')}</a>
+
+
+
+               
+
+
+
+                        <a idd={$vo['id']} class="del" href="javascript:;" >{:lang('DELETE')}</a>
+
+
+
+                    </td>
+
+
+
+                </tr>
+
+
+
+            </foreach>
+
+
+
+        <!--end foreach-->
+
+
+
+        </table>
+
+
+
+      <if condition=" count($order) eq 0 " >&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; 暂无数据 </if>
+
+
+
+        <ul class="pagination">{$page|default=''}</ul>
+
+
+
+    </form>
+
+
+
+</div>
+
+
+
+<script src="__STATIC__/js/admin.js"></script>
+
+
+
+<script src="__STATIC__/js/layer/layer.js"></script>
+
+
+
+<script>
+
+
+
+        // 删除
+
+
+
+        $('.del').bind('click',function(){
+
+
+
+            var ele = $(this);
+
+
+
+            var id = ele.attr('idd');
+
+
+
+            layer.confirm('是否删除',{btn:['是啊','不是']},function(){
+
+
+
+                $.ajax({
+
+
+
+                    url: 'delAnswer',
+
+
+
+                    type: 'POST',
+
+
+
+                    dataType: 'json',
+
+
+
+                    data:{'id':id},
+
+
+
+                    success:function(data){
+
+
+
+                        layer.closeAll();
+
+
+
+                        if( data.code == 1 ){
+
+
+
+                            ele.parent().parent().remove();
+
+
+
+                            var num = $('.foreachTr').length;
+
+
+
+                            console.log(num);
+
+
+
+                            if( num == 0 ){
+
+
+
+                                $(location).attr('href','index');
+
+
+
+                            }
+
+
+
+                        }
+
+
+
+                        layer.msg(data.msg,{time:700})              
+
+
+
+                    }
+
+
+
+                });
+
+
+
+            },function(){
+
+
+
+            });
+
+
+
+        })
+
+
+
+
+
+
+
+</script>
+
+
+
+</body>
+
+
+
+</html>

@@ -1,0 +1,102 @@
+
+.container{
+	width: 10rem;
+	height: 100%;
+	margin: 0 auto;
+	position: relative;
+	font-size: .38rem;
+	overflow: hidden;
+	background: url("/yitaibi_ml3k9o/public/static/images/images/login.png") no-repeat 0 0;
+	background-size: 100% 100%;
+}
+.img{
+	width: 100%;
+	height: auto;
+	font-size: 0;
+	position: relative;
+}
+.login{
+	width: 7.413rem;
+	padding-top: 2.6rem;
+	margin: 0 auto;
+}
+.login .ip{
+	height: 0.96rem;
+	background: #F5F5F5;
+	margin-bottom: 0.347rem;
+	font-size: 0.427rem;
+	color: #333;
+	padding: 0 0.267rem;
+	border-radius: 0.08rem;
+}
+.login .ip>label{
+	width: 20%;
+	height: 0.533rem;
+	margin-top: 0.213rem;
+	display: block;
+	float: left;
+	border-right: 1px solid #999999;
+}
+.login .ip>input{
+	height: 100%;
+	width: 70%;
+	padding-left: 0.267rem;
+	border:none;
+	float: right;
+	box-sizing: border-box;
+	background: transparent;
+}
+.login .btn{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 0.48rem;
+}
+.login .btn a>button{
+	width: 1.73rem;
+	height: 0.587rem;
+	color: #fff;
+	font-size: 0.373rem;
+	border-radius: 0.08rem;
+	background-color: #545A91;
+
+}
+.login .sign{
+	width: 7.12rem;
+	height: 1.333rem;
+	margin:3.87rem auto 0;
+}
+.login .sign>button{
+	width: 100%;
+	height: 100%;
+	color: #fff;
+	font-size: 0.56rem;
+	border-radius: 0.133rem;
+	text-align: center;
+	background: #545A91;
+}
+
+/*弹框*/
+.tan{
+	color: #fff;
+	width: 5.333rem;
+	height: 1.6rem;
+	text-align: center;
+	position: fixed;;
+	top: 50%;
+	left: 50%;
+	display: none;
+	margin-left: -2.67rem;
+	margin-top: -0.8rem;
+	background-color: #545A91;
+}
+.tan>h5{
+	font-size: 0.427rem;
+	margin: 0.213rem 0 0.133rem;
+	letter-spacing: 0.053rem;
+}
+.tan>p{
+	font-size: 0.373rem;
+	letter-spacing: 1px;
+}
+
+
