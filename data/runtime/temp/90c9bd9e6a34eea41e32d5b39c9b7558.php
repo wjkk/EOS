@@ -1,0 +1,69 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:42:"themes/simpleboot3/start_game/extract.html";i:1537004879;}*/ ?>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>我的ETH</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  	<link rel="stylesheet" type="text/css" href="/yitaibi_ml3k9o/public/static/css/common.css?v=1.1">
+  	<link rel="stylesheet" type="text/css" href="/yitaibi_ml3k9o/public/static/css/extract.css?v=1.1">
+  	<script src="/yitaibi_ml3k9o/public/static/js/js/jquery-3.0.0.min.js"></script>
+  	<script src="/yitaibi_ml3k9o/public/static/js/js/flexible.js"></script>
+</head>
+<body>
+
+	<div class="container">
+		<!-- <div class="head">
+			<h3>个人中心</h3>
+			<div class="box">
+				<a href="<?php echo url('center/center'); ?>">
+					<img src="/yitaibi_ml3k9o/public/static/images/images/back.png">
+				</a>
+			</div>
+		</div> -->
+		<div class="content">
+			<div class="top">
+				<h3 class="title">我的ETH</h3>
+				<div class="number" id="tot"><?php echo $user['eth']; ?></div>
+				<div class="ipt">￥
+					<input id="money" type="number" placeholder="请输入要提现的金额" value="">
+					<button id="button">全部提现</button>
+				</div>
+				<div class="btn">
+					<button>提现</button>
+				</div>
+			</div>
+			<div class="record">
+				<h4 class="tit">提现记录</h4>
+				<div class="list">
+					<table>
+						<thead>
+							<tr>
+								<th>时间</th>
+								<th>ETH</th>
+								<th>状态</th>
+							</tr>
+						</thead>
+						<tbody>
+							<!-- <tr>
+								<td>2018/7/4</td>
+								<td>1000</td>
+								<td>已到账</td>
+							</tr>
+							<tr>
+								<td>2018/7/4</td>
+								<td>1000</td>
+								<td>已到账</td>
+							</tr> -->
+						</tbody>
+
+					</table>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</body>
+<script src="/yitaibi_ml3k9o/public/static/js/js/extract.js"></script>
+</html>

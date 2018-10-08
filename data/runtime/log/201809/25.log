@@ -1,0 +1,199 @@
+---------------------------------------------------------------
+[ 2018-09-25T09:31:51+08:00 ] 121.32.198.11 GET /yitaibi_ml3k9o/public/index.php/start_game/register/login.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006612s ] mysql:host=localhost;port=3306;dbname=yitaibi;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jb_theme_file` [ RunTime:0.010078s ]
+[ sql ] [ SQL ] SELECT `more` FROM `jb_theme_file` WHERE  `theme` = 'simpleboot3'  AND (  `is_public` = 1 OR `file` = 'start_game/login' ) [ RunTime:0.000522s ]
+---------------------------------------------------------------
+[ 2018-09-25T09:31:51+08:00 ] 121.32.198.11 GET /yitaibi_ml3k9o/public/index.php/start_game/questions/getglobalinfo.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005909s ] mysql:host=localhost;port=3306;dbname=yitaibi;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jb_register` [ RunTime:0.008352s ]
+[ sql ] [ SQL ] SELECT * FROM `jb_register` WHERE  `phone` IS NULL LIMIT 1 [ RunTime:0.000418s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jb_activity` [ RunTime:0.006905s ]
+[ sql ] [ SQL ] SELECT * FROM `jb_activity` WHERE  `status` = 1 ORDER BY `stime` DESC LIMIT 1 [ RunTime:0.000310s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jb_theme_file` [ RunTime:0.000646s ]
+[ sql ] [ SQL ] SELECT `more` FROM `jb_theme_file` WHERE  `theme` = 'simpleboot3'  AND (  `is_public` = 1 OR `file` = 'start_game/home' ) [ RunTime:0.000257s ]
+---------------------------------------------------------------
+[ 2018-09-25T09:31:51+08:00 ] 121.32.198.11 GET /yitaibi_ml3k9o/public/index.php/start_game/register/login.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000677s ] mysql:host=localhost;port=3306;dbname=yitaibi;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jb_theme_file` [ RunTime:0.002074s ]
+[ sql ] [ SQL ] SELECT `more` FROM `jb_theme_file` WHERE  `theme` = 'simpleboot3'  AND (  `is_public` = 1 OR `file` = 'start_game/login' ) [ RunTime:0.001088s ]
+---------------------------------------------------------------
+[ 2018-09-25T14:45:44+08:00 ] 121.32.198.11 GET /yitaibi_ml3k9o/public/index.php/start_game/register/login.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000759s ] mysql:host=localhost;port=3306;dbname=yitaibi;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jb_theme_file` [ RunTime:0.001040s ]
+[ sql ] [ SQL ] SELECT `more` FROM `jb_theme_file` WHERE  `theme` = 'simpleboot3'  AND (  `is_public` = 1 OR `file` = 'start_game/login' ) [ RunTime:0.000498s ]
+---------------------------------------------------------------
+[ 2018-09-25T14:47:47+08:00 ] 121.32.198.11 GET /yitaibi_ml3k9o/public/index.php/start_game/register/login.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000742s ] mysql:host=localhost;port=3306;dbname=yitaibi;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jb_theme_file` [ RunTime:0.000867s ]
+[ sql ] [ SQL ] SELECT `more` FROM `jb_theme_file` WHERE  `theme` = 'simpleboot3'  AND (  `is_public` = 1 OR `file` = 'start_game/login' ) [ RunTime:0.000226s ]
+---------------------------------------------------------------
+[ 2018-09-25T14:49:51+08:00 ] 121.32.198.11 GET /yitaibi_ml3k9o/public/index.php/start_game/Ranking/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000680s ] mysql:host=localhost;port=3306;dbname=yitaibi;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jb_register` [ RunTime:0.001059s ]
+[ sql ] [ SQL ] SELECT * FROM `jb_register` WHERE  `phone` IS NULL LIMIT 1 [ RunTime:0.000403s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`head_img`,`eth`,`phone` FROM `jb_register` WHERE  `phone` IS NULL  AND `status` = 1 LIMIT 1 [ RunTime:0.000342s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`head_img`,`eth`,`phone` FROM `jb_register` WHERE  `status` = 1 ORDER BY `eth` DESC LIMIT 200 [ RunTime:0.000416s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jb_theme_file` [ RunTime:0.000688s ]
+[ sql ] [ SQL ] SELECT `more` FROM `jb_theme_file` WHERE  `theme` = 'simpleboot3'  AND (  `is_public` = 1 OR `file` = 'start_game/ranking' ) [ RunTime:0.000312s ]
+[ error ] [8]未定义数组索引: phone
+[ error ] [8]未定义数组索引: phone
+[ error ] [8]未定义数组索引: phone
+[ error ] [8]未定义数组索引: phone
+[ error ] [8]未定义数组索引: phone
+[ error ] [8]未定义数组索引: phone
+[ error ] [8]未定义数组索引: phone
+[ error ] [8]未定义数组索引: phone
+[ error ] [8]未定义数组索引: phone
+[ error ] [8]未定义数组索引: phone
+[ error ] [8]未定义数组索引: phone
+[ error ] [8]未定义数组索引: phone
+[ error ] [8]未定义数组索引: phone
+[ error ] [8]未定义数组索引: phone
+[ error ] [8]未定义数组索引: phone
+[ error ] [8]未定义数组索引: phone
+[ error ] [8]未定义数组索引: phone
+[ error ] [8]未定义数组索引: phone
+[ error ] [8]未定义数组索引: phone
+[ error ] [8]未定义数组索引: phone
+[ error ] [8]未定义数组索引: phone
+[ error ] [8]未定义数组索引: phone
+[ error ] [8]未定义数组索引: phone
+[ error ] [8]未定义数组索引: phone
+[ error ] [8]未定义数组索引: phone
+[ error ] [8]未定义数组索引: phone
+[ error ] [8]未定义数组索引: phone
+[ error ] [8]未定义数组索引: phone
+[ error ] [8]未定义数组索引: phone
+[ error ] [8]未定义数组索引: phone
+[ error ] [8]未定义数组索引: phone
+[ error ] [8]未定义数组索引: phone
+[ error ] [8]未定义数组索引: phone
+[ error ] [8]未定义数组索引: phone
+[ error ] [8]未定义数组索引: phone
+[ error ] [8]未定义数组索引: phone
+[ error ] [8]未定义数组索引: phone
+[ error ] [8]未定义数组索引: phone
+[ error ] [8]未定义数组索引: phone
+[ error ] [8]未定义数组索引: phone
+[ error ] [8]未定义数组索引: phone
+[ error ] [8]未定义数组索引: phone
+[ error ] [8]未定义数组索引: phone
+[ error ] [8]未定义数组索引: phone
+[ error ] [8]未定义数组索引: phone
+[ error ] [8]未定义数组索引: phone
+[ error ] [8]未定义数组索引: phone
+[ error ] [8]未定义数组索引: phone
+[ error ] [8]未定义数组索引: phone
+[ error ] [8]未定义数组索引: phone
+[ error ] [8]未定义数组索引: phone
+[ error ] [8]未定义数组索引: phone
+[ error ] [8]未定义数组索引: phone
+[ error ] [8]未定义数组索引: phone
+[ error ] [8]未定义数组索引: phone
+[ error ] [8]未定义数组索引: phone
+[ error ] [8]未定义数组索引: phone
+[ error ] [8]未定义数组索引: phone
+[ error ] [8]未定义数组索引: phone
+[ error ] [8]未定义数组索引: phone
+[ error ] [8]未定义数组索引: phone
+[ error ] [8]未定义数组索引: phone
+[ error ] [8]未定义数组索引: phone
+[ error ] [8]未定义数组索引: phone
+[ error ] [8]未定义数组索引: phone
+[ error ] [8]未定义数组索引: phone
+[ error ] [8]未定义数组索引: phone
+[ error ] [8]未定义数组索引: phone
+[ error ] [8]未定义数组索引: phone
+[ error ] [8]未定义数组索引: phone
+[ error ] [8]未定义数组索引: phone
+[ error ] [8]未定义数组索引: sort
+[ error ] [8]未定义数组索引: eth
+---------------------------------------------------------------
+[ 2018-09-25T14:49:51+08:00 ] 121.32.198.11 GET /yitaibi_ml3k9o/public/index.php/start_game/register/login.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000659s ] mysql:host=localhost;port=3306;dbname=yitaibi;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jb_theme_file` [ RunTime:0.000937s ]
+[ sql ] [ SQL ] SELECT `more` FROM `jb_theme_file` WHERE  `theme` = 'simpleboot3'  AND (  `is_public` = 1 OR `file` = 'start_game/login' ) [ RunTime:0.000235s ]
+---------------------------------------------------------------
+[ 2018-09-25T14:53:28+08:00 ] 121.32.198.11 GET /yitaibi_ml3k9o/public/index.php/start_game/register/login.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000615s ] mysql:host=localhost;port=3306;dbname=yitaibi;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jb_theme_file` [ RunTime:0.000908s ]
+[ sql ] [ SQL ] SELECT `more` FROM `jb_theme_file` WHERE  `theme` = 'simpleboot3'  AND (  `is_public` = 1 OR `file` = 'start_game/login' ) [ RunTime:0.000230s ]
+---------------------------------------------------------------
+[ 2018-09-25T14:53:47+08:00 ] 121.32.198.11 GET /yitaibi_ml3k9o/public/index.php/start_game/register/login.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000662s ] mysql:host=localhost;port=3306;dbname=yitaibi;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jb_theme_file` [ RunTime:0.000781s ]
+[ sql ] [ SQL ] SELECT `more` FROM `jb_theme_file` WHERE  `theme` = 'simpleboot3'  AND (  `is_public` = 1 OR `file` = 'start_game/login' ) [ RunTime:0.000231s ]
+---------------------------------------------------------------
+[ 2018-09-25T14:55:24+08:00 ] 121.32.198.11 GET /yitaibi_ml3k9o/public/index.php/start_game/register/login.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000639s ] mysql:host=localhost;port=3306;dbname=yitaibi;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jb_theme_file` [ RunTime:0.000751s ]
+[ sql ] [ SQL ] SELECT `more` FROM `jb_theme_file` WHERE  `theme` = 'simpleboot3'  AND (  `is_public` = 1 OR `file` = 'start_game/login' ) [ RunTime:0.000237s ]
+---------------------------------------------------------------
+[ 2018-09-25T14:56:12+08:00 ] 121.32.198.11 GET /yitaibi_ml3k9o/public/index.php/start_game/register/login.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000645s ] mysql:host=localhost;port=3306;dbname=yitaibi;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jb_theme_file` [ RunTime:0.000768s ]
+[ sql ] [ SQL ] SELECT `more` FROM `jb_theme_file` WHERE  `theme` = 'simpleboot3'  AND (  `is_public` = 1 OR `file` = 'start_game/login' ) [ RunTime:0.000219s ]
+---------------------------------------------------------------
+[ 2018-09-25T14:56:58+08:00 ] 121.32.198.11 GET /yitaibi_ml3k9o/public/index.php/start_game/register/login.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000601s ] mysql:host=localhost;port=3306;dbname=yitaibi;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jb_theme_file` [ RunTime:0.000770s ]
+[ sql ] [ SQL ] SELECT `more` FROM `jb_theme_file` WHERE  `theme` = 'simpleboot3'  AND (  `is_public` = 1 OR `file` = 'start_game/login' ) [ RunTime:0.000234s ]
+---------------------------------------------------------------
+[ 2018-09-25T14:58:05+08:00 ] 121.32.198.11 GET /yitaibi_ml3k9o/public/index.php/start_game/register/login.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000687s ] mysql:host=localhost;port=3306;dbname=yitaibi;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jb_theme_file` [ RunTime:0.000750s ]
+[ sql ] [ SQL ] SELECT `more` FROM `jb_theme_file` WHERE  `theme` = 'simpleboot3'  AND (  `is_public` = 1 OR `file` = 'start_game/login' ) [ RunTime:0.000220s ]
+---------------------------------------------------------------
+[ 2018-09-25T15:07:21+08:00 ] 121.32.198.11 GET /yitaibi_ml3k9o/public/index.php/start_game/register/login.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000617s ] mysql:host=localhost;port=3306;dbname=yitaibi;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jb_theme_file` [ RunTime:0.000732s ]
+[ sql ] [ SQL ] SELECT `more` FROM `jb_theme_file` WHERE  `theme` = 'simpleboot3'  AND (  `is_public` = 1 OR `file` = 'start_game/login' ) [ RunTime:0.000221s ]
+---------------------------------------------------------------
+[ 2018-09-25T15:07:23+08:00 ] 121.32.198.11 GET /yitaibi_ml3k9o/public/index.php/start_game/register/login.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000650s ] mysql:host=localhost;port=3306;dbname=yitaibi;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jb_theme_file` [ RunTime:0.000857s ]
+[ sql ] [ SQL ] SELECT `more` FROM `jb_theme_file` WHERE  `theme` = 'simpleboot3'  AND (  `is_public` = 1 OR `file` = 'start_game/login' ) [ RunTime:0.000242s ]
+---------------------------------------------------------------
+[ 2018-09-25T15:07:54+08:00 ] 121.32.198.11 GET /yitaibi_ml3k9o/public/index.php/start_game/register/login.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000689s ] mysql:host=localhost;port=3306;dbname=yitaibi;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jb_theme_file` [ RunTime:0.000863s ]
+[ sql ] [ SQL ] SELECT `more` FROM `jb_theme_file` WHERE  `theme` = 'simpleboot3'  AND (  `is_public` = 1 OR `file` = 'start_game/login' ) [ RunTime:0.000182s ]
+---------------------------------------------------------------
+[ 2018-09-25T15:08:04+08:00 ] 121.32.198.11 GET /yitaibi_ml3k9o/public/index.php/start_game/register/register.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004455s ] mysql:host=localhost;port=3306;dbname=yitaibi;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jb_theme_file` [ RunTime:0.007746s ]
+[ sql ] [ SQL ] SELECT `more` FROM `jb_theme_file` WHERE  `theme` = 'simpleboot3'  AND (  `is_public` = 1 OR `file` = 'start_game/register' ) [ RunTime:0.000355s ]
+---------------------------------------------------------------
+[ 2018-09-25T15:08:12+08:00 ] 121.32.198.11 GET /yitaibi_ml3k9o/public/index.php/start_game/register/forget.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000770s ] mysql:host=localhost;port=3306;dbname=yitaibi;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jb_theme_file` [ RunTime:0.000814s ]
+[ sql ] [ SQL ] SELECT `more` FROM `jb_theme_file` WHERE  `theme` = 'simpleboot3'  AND (  `is_public` = 1 OR `file` = 'start_game/reset_pwd' ) [ RunTime:0.000394s ]
+---------------------------------------------------------------
+[ 2018-09-25T15:14:29+08:00 ] 121.32.198.11 GET /yitaibi_ml3k9o/public/index.php/start_game/Questions/getGlobalInfo
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000672s ] mysql:host=localhost;port=3306;dbname=yitaibi;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jb_register` [ RunTime:0.000791s ]
+[ sql ] [ SQL ] SELECT * FROM `jb_register` WHERE  `phone` IS NULL LIMIT 1 [ RunTime:0.000232s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jb_activity` [ RunTime:0.000900s ]
+[ sql ] [ SQL ] SELECT * FROM `jb_activity` WHERE  `status` = 1 ORDER BY `stime` DESC LIMIT 1 [ RunTime:0.000348s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jb_theme_file` [ RunTime:0.000548s ]
+[ sql ] [ SQL ] SELECT `more` FROM `jb_theme_file` WHERE  `theme` = 'simpleboot3'  AND (  `is_public` = 1 OR `file` = 'start_game/home' ) [ RunTime:0.000308s ]
+---------------------------------------------------------------
+[ 2018-09-25T15:14:30+08:00 ] 121.32.198.11 GET /yitaibi_ml3k9o/public/index.php/start_game/register/login.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000713s ] mysql:host=localhost;port=3306;dbname=yitaibi;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jb_theme_file` [ RunTime:0.000990s ]
+[ sql ] [ SQL ] SELECT `more` FROM `jb_theme_file` WHERE  `theme` = 'simpleboot3'  AND (  `is_public` = 1 OR `file` = 'start_game/login' ) [ RunTime:0.000255s ]
+---------------------------------------------------------------
+[ 2018-09-25T15:16:50+08:00 ] 121.32.198.11 GET /yitaibi_ml3k9o/public/index.php/start_game/Questions/getGlobalInfo
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000659s ] mysql:host=localhost;port=3306;dbname=yitaibi;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jb_register` [ RunTime:0.000845s ]
+[ sql ] [ SQL ] SELECT * FROM `jb_register` WHERE  `phone` IS NULL LIMIT 1 [ RunTime:0.000218s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jb_activity` [ RunTime:0.000704s ]
+[ sql ] [ SQL ] SELECT * FROM `jb_activity` WHERE  `status` = 1 ORDER BY `stime` DESC LIMIT 1 [ RunTime:0.000206s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jb_theme_file` [ RunTime:0.000628s ]
+[ sql ] [ SQL ] SELECT `more` FROM `jb_theme_file` WHERE  `theme` = 'simpleboot3'  AND (  `is_public` = 1 OR `file` = 'start_game/home' ) [ RunTime:0.000168s ]
+---------------------------------------------------------------
+[ 2018-09-25T15:16:50+08:00 ] 121.32.198.11 GET /yitaibi_ml3k9o/public/index.php/start_game/register/login.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000698s ] mysql:host=localhost;port=3306;dbname=yitaibi;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jb_theme_file` [ RunTime:0.000806s ]
+[ sql ] [ SQL ] SELECT `more` FROM `jb_theme_file` WHERE  `theme` = 'simpleboot3'  AND (  `is_public` = 1 OR `file` = 'start_game/login' ) [ RunTime:0.000188s ]
