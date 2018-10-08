@@ -10,3 +10,8 @@ admin side: https://xcx.kh.gzzh.ren/yitaibi_ml3k9o/public/index.php/admin/index/
 username: admin
 password: 123456
 
+
+#EOS Development Source
+http://blog.eosdata.io/index.php/eoswallet/
+
+
