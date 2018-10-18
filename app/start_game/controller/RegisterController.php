@@ -94,6 +94,34 @@ class RegisterController extends HomeBaseController
      }
 
 
+    // 注册时生成memo，memo对每个用户唯一，用于获取用户的充值信息
+    protected function gen_memo($length = 6)
+    {
+        $chars = array(
+            '1', '2', '3', '4', '5', '6', '7', '8', '9', '0'
+        );
+        // 在 $chars 中随机取 $length 个数组元素键名
+        $keys = array_rand($chars, $length);
+        $memo = '';
+        for($i = 0; $i < $length; $i++)
+        {
+            // 将 $length 个数组元素连接成字符串
+            $memo .= $chars[$keys[$i]];
+        }
+        return $memo;
+    }
+
+    protected function make_memo()
+    {
+        $memo = gen_memo();
+        // 检查数据库里这个memo是否已经使用，是的话就重新生成memo
+        $user = Db::name('register')->where(['memo'=>$memo])->find();
+        while($user) {
+            $memo = gen_memo();
+            $user = Db::name('register')->where(['memo'=>$memo])->find();
+        }
+        return $memo;
+    }
 
     /**
      * 注册页面
@@ -179,6 +207,7 @@ class RegisterController extends HomeBaseController
             $data['add_time'] = time();
             $data['head_img'] = '';
             $data['name'] = '';
+            $data['memo'] = make_memo();
             // dump($data);die;
             // cmf_compare_password($password, $passwordInDb)
             // $password: string 要比较的密码
