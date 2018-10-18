@@ -46,6 +46,28 @@ class CenterController extends HomeBaseController
             return $this->fetch(':center');
     }
 
+
+    /**
+     * 充值
+     * 目前是提供一个链接跳转到第三方支付完成充值，需要用户输入memo信息
+     * @return [data] [memo]
+     */
+    public function refill()
+    {
+        $this->randcookie();
+
+        $memo = '';
+        $phone = session('phone');
+        $user = Db::name('register')->where(['phone'=>$phone])->find();
+        // 获取memo
+        if(!$user) {
+            return json(['code'=>40500,'msg'=>'用户不存在']);
+        }
+        $memo = $user['memo'];
+
+        return json(['code'=>2000,'data'=>$memo]);
+    }
+
     /**
      * 提现
      */

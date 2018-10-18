@@ -2168,7 +2168,9 @@ CREATE TABLE `jb_register` (
   `update_time` int(11) unsigned DEFAULT NULL COMMENT '登录时间',
   `randnum` int(11) unsigned DEFAULT NULL COMMENT '游戏标识 1进入游戏 2结束',
   `randcookie` varchar(255) DEFAULT '1',
-  PRIMARY KEY (`id`)
+  `memo` varchar(10) COMMENT '用户memo用于充值',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `memo` (`memo`)
 ) ENGINE=InnoDB AUTO_INCREMENT=95 DEFAULT CHARSET=utf8mb4 COMMENT='用户表';
 
 -- ----------------------------
