@@ -32,7 +32,7 @@
 			<div class="money">
 				<p>余额：<span>{$data.eth}</span>ETH</p>
 				<a>
-					<button class="isModal cz" data-type="0">充值</button>
+					<button class="cz isModal" data-type="0">充值</button>
 				</a>
 				<a href="extract.html">
 					<button class="tx">提现</button>
@@ -95,38 +95,34 @@
 					<button class="fz" id="fz">复制邀请码</button>
 				</div>
 			</div>
-            <input type="hidden" name="" id="reviveCard" value="{$revive_card}" >
+			<input type="hidden" name="" id="reviveCard" value="{$revive_card}" >
 			<div class="close">
 				<div>x</div>
 			</div>
 		</div>
 		<!-- 充值弹框 -->
-                <div class="tan" id="czBox">
-                        <div class="content">
+			<div class="tan" id="czBox">
+			<div class="content">
                                 <h3 class="title"></h3>
-                                <div class="czaddress sub">
+                                <div class="czaddress">
                                         <button class="cpaddress">复制多重签名地址</button>
                                 </div>
-                                <div class="memo sub">
+                                <div class="memo">
                                         <label>memo</label>
-                                        <input type="text" value="" readonly="readonly" id="user_memo">
+                                        <input type="text" value="{$memo}" readonly="readonly" id="user_memo">
                                         <button class="cpmemo">复制</button>
                                 </div>
-                                <div class="warning sub">
+                                <div class="czwarning">
                                         <label>充值EOS到OKEx同时需要一个充值地址和EOS memo。警告：如果未遵守正确的EOS充值步骤，币会丢失！</label>
                                 </div>
                         </div>
                         <div class="close">
                                 <div>x</div>
                         </div>
-                </div>
+		</div>
 	</div>
-
 </body>
 <script>
-//TODO: click cpaddress
-
-//TODO: click cpmemo
 
 // 充值
 $('body').on('click', '.cz', function(){
@@ -137,12 +133,13 @@ $('body').on('click', '.cz', function(){
                 "text-align": "center",
                 "padding": "0.267rem 0 0.3rem",
             });
-        $('.tan .sub').eq(1).addClass('show').siblings().removeClass('show');
+        $('#czBox .tan').addClass('show');
         // show memo
-        $.post("{:url('refill')}", null, function(data) {
-            $('#czBox').user_memo = data.msg;
-        }
-        //$('#czBox').user_memo = 'test';
+        $.post("{:url('center/refill')}", null, function(data) {
+            //alert('in refill');
+            $('#user_memo').val(data.memo);
+        });
+
         return;
 });
 $('body').on('click', '.buys', function(){
@@ -180,9 +177,13 @@ $('#buyGold').keyup(function() {
 
 })
 
-$(".close").click(function() {
-        $(".tan").css('display','none')
-    })
+$('#czBox .close').click(function() {
+    $('#czBox').css('display','none');
+})
+
+$('#modalBox .close').click(function() {
+    $('#modalBox').css('display','none');
+})
 
 $('body').on('click', '.code', function() {
 
