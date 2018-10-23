@@ -214,3 +214,41 @@
 .show{
 	display: block;
 }
+.tan .content .czaddress{
+        text-align: center;
+        width: 5.1rem;
+        height: 0.5rem;
+        background-color: #fff;
+        margin: 0 auto 0.15rem auto;
+        border-radius: 0.08rem;
+}
+.tan .content .cpaddress{
+	background-color: #fff;
+}
+.tan .content .memo{
+	color: #fff;
+	height: 0.4rem;
+	font-size: 0.32rem;
+	margin-bottom: 0.133rem;
+	margin-left: 0.2rem;
+}
+.tan .content .memo>input{
+	text-align: center;
+	color: #f6b26b;
+	background-color: #545A91;
+	width: 2.8rem;
+	height: 0.4rem;
+	border:none;
+}
+.tan .content .cpmemo{
+	width: 1.0rem;
+	height: 0.4rem;
+	background-color: #fff;
+	border-radius: 0.08rem;
+}
+.tan .content .czwarning{
+	color: #f6b26b;
+	font-size: 0.25rem;
+	margin-left: 0.2rem;
+	margin-right: 0.2rem;
+}

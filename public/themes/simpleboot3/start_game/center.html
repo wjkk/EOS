@@ -1,132 +1,128 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8"/>
-	<title>个人中心</title>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-  	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  	<link rel="stylesheet" type="text/css" href="__STATIC__/css/common.css?v=1.1">
-  	<link rel="stylesheet" type="text/css" href="__STATIC__/css/center.css?v=1.2">
-  	<script src="__STATIC__/js/js/jquery-3.0.0.min.js"></script>
-  	<script src="__STATIC__/js/js/flexible.js"></script>
+    <meta charset="utf-8"/>
+    <title>个人中心</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="__STATIC__/css/common.css?v=1.1">
+    <link rel="stylesheet" type="text/css" href="__STATIC__/css/center.css?v=1.2">
+    <script src="__STATIC__/js/js/jquery-3.0.0.min.js"></script>
+    <script src="__STATIC__/js/js/flexible.js"></script>
 </head>
 <body>
-	<div class="container">
-		<div class="center">
-			<div class="head">
-			
-           <!--  <em class="upload-btn">
-                <input type="file" name="pic1" id="pic" accept="image/gif,image/jpeg,image/x-png"/>
+    <div class="container">
+        <div class="center">
+            <div class="head">
+            
+            <!--  <em class="upload-btn">
+            <input type="file" name="pic1" id="pic" accept="image/gif,image/jpeg,image/x-png"/>
             </em>
-			<img src="{$data.head_img}" > -->
+            <img src="{$data.head_img}" > -->
             <div id="preview" class="upload-btn">
                 <img id="imghead" border="0" src="{$data.head_img}" onclick="$('#previewImg').click();">
             </div>         
             <input type="file" onchange="previewImage(this)" style="display: none;" id="previewImg">
-			
+            
             <!-- <p><span>{$data.name}</span></p> -->
-			<p><input id="name" type="text" value="{$data.name}"></p>
+            <p><input id="name" type="text" value="{$data.name}"></p>
 
 
-			</div>
-			<div class="money">
-				<p>余额：<span>{$data.eth}</span>ETH</p>
-				<a>
-					<button class="isModal cz" data-type="0">充值</button>
-				</a>
-				<a href="extract.html">
-					<button class="tx">提现</button>
-				</a>
-			</div>
-			<div class="card">
-				<div class="card_num" style="background: url('__STATIC__/images/images/center/dt.png') no-repeat 0 0;background-size: 100% 100%;">
-					<div class="news">
-						<h4>答题卡</h4>
-						<p>剩余卡数：{$data.answer_card}张</p>
-						<button class="isModal buys" data-type="1">点击购买</button>
-					</div>
-				</div>
-				<div class="card_num" style="background: url('__STATIC__/images/images/center/fh.png') no-repeat 0 0;background-size: 100% 100%;">
-					<div class="news">
-						<h4>复活卡</h4>
-						<p>剩余卡数：{$data.revive_card}张</p>
-						<!-- <button>点击购买</button> -->
-					</div>
-				</div>
-				<div class="card_num" style="background: url('__STATIC__/images/images/center/yq.png') no-repeat 0 0;background-size: 100% 100%;">
-					<div class="news">
-						<h4>邀请码</h4>
-						<empty name="data.invite_code"><p> </p>
-						<button class="isModal code" data-type="2">获取邀请码</button>
-						<else />
-						<p>{$data.invite_code}</p>
-						</empty>
-
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- 弹框 -->
-		<div class="tan" id="modalBox">
-			<div class="content">
-				<h3 class="title"></h3>
-				<div class="money sub">
-					<label>充值金额</label>
-					<div class="ipt">￥
-						<input type="number" value="">
-					</div>
-					<div class="qr">
-						<button>确认</button>
-					</div>
-				</div>
-				<div class="cont sub">
-					<div class="num">
-						<label>个数：</label>
-						<input type="number" placeholder="购买个数" id="buyGold">
-					</div>
-					<div class="num">
-						<label>充值金额：</label>
-						<input type="text" value="" readonly="readonly" id="payMoney">
-					</div>
-					<button class="zf">立即支付</button>
-				</div>
-				<div class="yqm sub">
-					<input type="text" class="addresNm" value="{$data.invite_code}" readonly="readonly">
-					<button class="fz" id="fz">复制邀请码</button>
-				</div>
-			</div>
-            <input type="hidden" name="" id="reviveCard" value="{$revive_card}" >
-			<div class="close">
-				<div>x</div>
-			</div>
-		</div>
-		<!-- 充值弹框 -->
-                <div class="tan" id="czBox">
-                        <div class="content">
-                                <h3 class="title"></h3>
-                                <div class="czaddress sub">
-                                        <button class="cpaddress">复制多重签名地址</button>
-                                </div>
-                                <div class="memo sub">
-                                        <label>memo</label>
-                                        <input type="text" value="" readonly="readonly" id="user_memo">
-                                        <button class="cpmemo">复制</button>
-                                </div>
-                                <div class="warning sub">
-                                        <label>充值EOS到OKEx同时需要一个充值地址和EOS memo。警告：如果未遵守正确的EOS充值步骤，币会丢失！</label>
-                                </div>
-                        </div>
-                        <div class="close">
-                                <div>x</div>
-                        </div>
+            </div>
+            <div class="money">
+                <p>余额：<span>{$data.eth}</span>ETH</p>
+                <a>
+                    <button class="cz isModal" data-type="0">充值</button>
+                </a>
+                <a href="extract.html">
+                    <button class="tx">提现</button>
+                </a>
+            </div>
+            <div class="card">
+                <div class="card_num" style="background: url('__STATIC__/images/images/center/dt.png') no-repeat 0 0;background-size: 100% 100%;">
+                    <div class="news">
+                        <h4>答题卡</h4>
+                        <p>剩余卡数：{$data.answer_card}张</p>
+                        <button class="isModal buys" data-type="1">点击购买</button>
+                    </div>
                 </div>
-	</div>
+                <div class="card_num" style="background: url('__STATIC__/images/images/center/fh.png') no-repeat 0 0;background-size: 100% 100%;">
+                    <div class="news">
+                        <h4>复活卡</h4>
+                        <p>剩余卡数：{$data.revive_card}张</p>
+                        <!-- <button>点击购买</button> -->
+                    </div>
+                </div>
+                <div class="card_num" style="background: url('__STATIC__/images/images/center/yq.png') no-repeat 0 0;background-size: 100% 100%;">
+                    <div class="news">
+                        <h4>邀请码</h4>
+                        <empty name="data.invite_code"><p> </p>
+                        <button class="isModal code" data-type="2">获取邀请码</button>
+                        <else />
+                        <p>{$data.invite_code}</p>
+                        </empty>
 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 弹框 -->
+        <div class="tan" id="modalBox">
+            <div class="content">
+                <h3 class="title"></h3>
+                <div class="money sub">
+                    <label>充值金额</label>
+                    <div class="ipt">￥
+                        <input type="number" value="">
+                    </div>
+                    <div class="qr">
+                        <button>确认</button>
+                    </div>
+                </div>
+                <div class="cont sub">
+                    <div class="num">
+                        <label>个数：</label>
+                        <input type="number" placeholder="购买个数" id="buyGold">
+                    </div>
+                    <div class="num">
+                        <label>充值金额：</label>
+                        <input type="text" value="" readonly="readonly" id="payMoney">
+                    </div>
+                    <button class="zf">立即支付</button>
+                </div>
+                <div class="yqm sub">
+                    <input type="text" class="addresNm" value="{$data.invite_code}" readonly="readonly">
+                    <button class="fz" id="fz">复制邀请码</button>
+                </div>
+            </div>
+            <input type="hidden" name="" id="reviveCard" value="{$revive_card}" >
+            <div class="close">
+                <div>x</div>
+            </div>
+        </div>
+        <!-- 充值弹框 -->
+        <div class="tan" id="czBox">
+            <div class="content">
+                <h3 class="title"></h3>
+                <div class="czaddress">
+                    <button class="cpaddress">复制多重签名地址</button>
+                </div>
+                <div class="memo">
+                    <label>memo</label>
+                    <input type="text" value="{$memo}" readonly="readonly" id="user_memo">
+                    <button class="cpmemo">复制</button>
+                </div>
+                <div class="czwarning">
+                    <label>充值EOS到OKEx同时需要一个充值地址和EOS memo。警告：如果未遵守正确的EOS充值步骤，币会丢失！</label>
+                </div>
+            </div>
+            <div class="close">
+                <div>x</div>
+            </div>
+        </div>
+    </div>
 </body>
 <script>
-//TODO: click cpaddress
-
-//TODO: click cpmemo
 
 // 充值
 $('body').on('click', '.cz', function(){
@@ -135,19 +131,41 @@ $('body').on('click', '.cz', function(){
 
         title.text("okbtothemoon").css({
                 "text-align": "center",
-                "padding": "0.267rem 0 0.3rem",
+                "padding": "0.15rem 0 0.3rem",
             });
-        $('.tan .sub').eq(1).addClass('show').siblings().removeClass('show');
+        $('#czBox .tan').addClass('show');
         // show memo
-        $.post("{:url('refill')}", null, function(data) {
-            $('#czBox').user_memo = data.msg;
-        }
-        //$('#czBox').user_memo = 'test';
+        $.post("{:url('center/refill')}", null, function(data) {
+            //alert('in refill');
+            $('#user_memo').val(data.memo);
+        });
+
         return;
 });
+
+$('#czBox .cpaddress').click(function() {
+    // add a temporary node for copy the refill address
+    const input = document.createElement('input');
+    input.setAttribute('readonly', 'readonly');
+    //TODO: update the url address
+    input.setAttribute('value', 'http://www.baidu.com');
+    document.body.appendChild(input);
+    input.select();
+    document.execCommand('copy');
+    alert("充值地址已复制，可贴粘。");
+});
+
+$('#czBox .cpmemo').click(function() {
+    var memo = document.getElementById("user_memo");
+    memo.select();
+    document.execCommand("Copy");
+    alert("memo已复制，可贴粘。");
+    document.body.removeChild(input);
+});
+
 $('body').on('click', '.buys', function(){
         $('#modalBox').show();
-       var title = $('#modalBox .title');
+        var title = $('#modalBox .title');
         
         title.text("购买答题卡").css({
                 "text-align": "center",
@@ -156,6 +174,7 @@ $('body').on('click', '.buys', function(){
         $('.tan .sub').eq(1).addClass('show').siblings().removeClass('show');
         return;
 });
+
 $('body').on('click', '.zf', function(){
         var eth = $('#payMoney').val();
         var buyGold = $('#buyGold').val();
@@ -166,8 +185,8 @@ $('body').on('click', '.zf', function(){
 
         alert(data.msg);
         setTimeout(function(){
-                              window.location.reload();
-                        },700);
+            window.location.reload();
+            },700);
     });
 });
 $('#buyGold').keyup(function() {
@@ -180,21 +199,25 @@ $('#buyGold').keyup(function() {
 
 })
 
-$(".close").click(function() {
-        $(".tan").css('display','none')
-    })
+$('#czBox .close').click(function() {
+    $('#czBox').css('display','none');
+})
+
+$('#modalBox .close').click(function() {
+    $('#modalBox').css('display','none');
+})
 
 $('body').on('click', '.code', function() {
 
 
-		$.post("{:url('invite')}", null, function(data) {
+        $.post("{:url('invite')}", null, function(data) {
             setTimeout(function(){
 
                               // window.location.href="https://xcx.kh.gzzh.ren/yitaibi_ml3k9o/public/index.php/start_game/center/center";
                               window.location.reload();
                         },1000);
-		alert(data.msg);
-	});
+        alert(data.msg);
+    });
 });
 
 
@@ -237,18 +260,18 @@ $('body').on('click', '.code', function() {
 
     //修改名字
     $('.head #name').change(function() {
-    	var sel = $(this).val();
-    	$.ajax({
-    		type:'POST',
-    		url:"{:url('center/name')}",
-    		data: {name:sel},
-    		success: function(data){
-    			alert(data.msg);
+        var sel = $(this).val();
+        $.ajax({
+            type:'POST',
+            url:"{:url('center/name')}",
+            data: {name:sel},
+            success: function(data){
+                alert(data.msg);
                 setTimeout(function(){
                               window.location.reload();
                         },700);
-    		}
-    	})
+            }
+        })
     })
 
 

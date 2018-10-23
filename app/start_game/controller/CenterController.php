@@ -65,7 +65,7 @@ class CenterController extends HomeBaseController
         }
         $memo = $user['memo'];
 
-        return json(['code'=>2000,'data'=>$memo]);
+        return json(['code'=>2000, 'memo'=>$memo]);
     }
 
     /**
