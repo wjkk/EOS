@@ -214,38 +214,41 @@
 .show{
 	display: block;
 }
-.tan .czaddress{
+.tan .content .czaddress{
         text-align: center;
-        color: #333;
-        width: 2.1rem;
-        height: 0.453rem;
+        width: 5.1rem;
+        height: 0.5rem;
         background-color: #fff;
-        margin-left: auto;
-        margin-right: auto;
+        margin: 0 auto 0.15rem auto;
+        border-radius: 0.08rem;
 }
-.tan .cpaddress{
-	color: #111;
+.tan .content .cpaddress{
 	background-color: #fff;
 }
 .tan .content .memo{
 	color: #fff;
-	height: 0.453rem;
+	height: 0.4rem;
+	font-size: 0.32rem;
 	margin-bottom: 0.133rem;
-	margin-left: 0.133rem;
+	margin-left: 0.2rem;
 }
 .tan .content .memo>input{
 	text-align: center;
+	color: #f6b26b;
+	background-color: #545A91;
 	width: 2.8rem;
-	height: 0.453rem;
+	height: 0.4rem;
 	border:none;
 }
 .tan .content .cpmemo{
 	width: 1.0rem;
-	height: 0.453rem;
+	height: 0.4rem;
 	background-color: #fff;
+	border-radius: 0.08rem;
 }
 .tan .content .czwarning{
-	color: #fff;
+	color: #f6b26b;
 	font-size: 0.25rem;
-	margin-left: 0.133rem;
+	margin-left: 0.2rem;
+	margin-right: 0.2rem;
 }
